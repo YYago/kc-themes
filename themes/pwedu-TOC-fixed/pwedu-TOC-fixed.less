@@ -13,10 +13,6 @@
 *   4. 如果不考虑主目录(左侧主目录)展开宽度，可以设为：980 + [ TOC 最长的 li 的 width ] 。
 */
 @media only screen and(min-width:1490px){
-    
-    .article-body{
-        margin-left: 1px !important;
-    }
     .markdown-toc{
         position: relative !important;
         _top:-58px;/*页面不够宽时会被分享按钮遮挡（'z-index'也许能控制，但可能会导致分享按钮无法使用），如果TOC条目太多，可以把‘_’去掉以尽量容纳 TOC*/
