@@ -13,9 +13,6 @@
 *   4. 如果不考虑主目录(左侧主目录)展开宽度，可以设为：980 + [ TOC 最长的 li 的 width ] 。
 */
 @media only screen and (min-width: 1490px) {
-  .article-body {
-    margin-left: 1px !important;
-  }
   .markdown-toc {
     position: relative !important;
     _top: -58px;
