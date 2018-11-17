@@ -14,10 +14,10 @@
   "author": "学点笔记",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-connect": "^5.6.1",
-    "gulp-less": "^4.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.0.0"
+    "gulp": ">=3.9.1",
+    "gulp-connect": ">=5.6.1",
+    "gulp-less": ">=4.0.1",
+    "gulp-rename": ">=1.4.0",
+    "gulp-replace": ">=1.0.0"
   }
 }
