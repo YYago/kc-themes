@@ -71,3 +71,9 @@ typings/
 
 # Serverless directories
 .serverless
+
+# emmmm
+
+themes/*/*.html
+themes/*/*.css
+!themes/*/website.css

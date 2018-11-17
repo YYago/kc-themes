@@ -1,23 +1,36 @@
 # kc-themes
 
 #### 项目介绍
+
 看云文档样式(For: "style/website.css")。
 
-#### 软件架构
-软件架构说明
+#### 安装教程 & 使用说明
 
+如直接使用到自己的文档，则在themes目录选择对应的主题样式直接复制源码即可。
 
-#### 安装教程
+如果想自己开发则：
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. fork仓库或者自己下载仓库文件到本地进行开发。
+2. 克隆或者解压到指定文件夹之后，进入`kc-themes` 目录。
+3. 运行 `npm install`。
+4. 编辑 `gulpfile.js` 的 `themeName` 常量(例如:"myTheme")，使gulp的作用路径指向你新建的样式文件夹。
+5. 然后运行 `gulp new`，将得到新的主题目录：`themes/myTheme`;
+    >会得到如下*默认文件：*
+    ```
+    themes/myTheme.less # less 文件。
+    themes/_index.html  # 可修改。
+    themes/index.html   # 由_index.html而来，会被重复覆盖，测试用。
+    themes/README.md    # 主题介绍
+    ```
 
-#### 使用说明
+6. 现在你可以在`themes/myTheme`下开始开发了。
+7. 开发完之后，执行 `gulp pub` 生成 `website.css` 。
 
-1. xxxx
-2. xxxx
-3. xxxx
+## 主题列表
+
+主题名称 | 描述 | 源码
+-------|------|------
+[pwedu-TOC-fixed](themes/pwedu-TOC-fixed)   | 文章内部导航组件:`[TOC]` 固定在浏览器窗口，方面上下文导航。     |[less](themes/pwedu-TOC-fixed/pwedu-TOC-fixed.less)、[CSS](themes/pwedu-TOC-fixed/website.css)
 
 #### 参与贡献
 
@@ -26,12 +39,13 @@
 3. 提交代码
 4. 新建 Pull Request
 
+> *可贡献的点：*
+>
+>   * 新的主题；
+>   * 新增可控 DOM 节点（某些插件、标记、组件专有类(class)或者唯一标识(ID)）。 ——针对 `statics/less.less`,可新增`scss`支持。
+>   * 脚手架优化。——针对 `gulpfile.js`,可增 `grunt.js`、`webpack`等。
+>   * 预览、测试页面优化。 
 
-#### 码云特技
+LICENSE
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+[MIT](LICENSE)

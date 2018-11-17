@@ -1,0 +1,57 @@
+/*
+*====[ Start pwedu-TOC-fixed ]====
+*
+* ThemeName: pwedu-TOC-fixed 
+* Version: v0.1
+* Author: https://www.kancloud.cn/@pwedu
+* Description: 
+*   1. 使用 '@media screen'。
+*   2. 如果不介意，可以使用入侵式固定（以尽量适应小屏设备）:
+*       ----
+*       .markdown-toc{...right: 200px;} 或者更多，这取决于链接字符长度，最大值 932px；可以限制宽度然后侵入正文（但会发生遮挡，不推荐）
+*   3. 1490px = 279+932+279，如果都是短标题，可以适当减小：279+932+[ TOC 最长的 li 的 width ] 。
+*   4. 如果不考虑主目录(左侧主目录)展开宽度，可以设为：980 + [ TOC 最长的 li 的 width ] 。
+*/
+@media only screen and (min-width: 1490px) {
+  .article-body {
+    margin-left: 1px !important;
+  }
+  .markdown-toc {
+    position: relative !important;
+    _top: -58px;
+    /*页面不够宽时会被分享按钮遮挡（'z-index'也许能控制，但可能会导致分享按钮无法使用），如果TOC条目太多，可以把‘_’去掉以尽量容纳 TOC*/
+    float: right;
+    right: -8px;
+    width: auto !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .markdown-toc > ul {
+    position: fixed;
+    background: rgba(207, 202, 202, 0.6);
+    border-radius: 5px;
+    height: 99.5%;
+  }
+  .markdown-toc > ul li {
+    list-style-type: upper-alpha;
+  }
+  .markdown-toc > ul li li {
+    list-style-type: decimal;
+  }
+  .markdown-toc > ul li li li {
+    list-style-type: unset;
+  }
+  .markdown-toc a:link {
+    color: #4183c4;
+  }
+  .markdown-toc a:visited {
+    color: #4183c4;
+  }
+  .markdown-toc a:hover {
+    color: red;
+  }
+  .markdown-toc a:active {
+    color: yellow;
+  }
+}
+/*====[ End pwedu-TOC-fixed ]====*/
