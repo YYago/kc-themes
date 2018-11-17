@@ -17,10 +17,10 @@
 5. 然后运行 `gulp new`，将得到新的主题目录：`themes/myTheme`;
     >会得到如下*默认文件：*
     ```
-    themes/myTheme.less # less 文件。
-    themes/_index.html  # 可修改。
-    themes/index.html   # 由_index.html而来，会被重复覆盖，测试用。
-    themes/README.md    # 主题介绍
+    themes/myTheme/myTheme.less # less 文件。
+    themes/myTheme/_index.html  # 可修改。
+    themes/myTheme/index.html   # 由_index.html而来，会被重复覆盖，测试用。
+    themes/myTheme/README.md    # 主题介绍
     ```
 
 6. 现在你可以在`themes/myTheme`下开始开发了。
